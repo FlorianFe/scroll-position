@@ -1,0 +1,37 @@
+<script>
+
+customElements.define('scroll-position',
+
+  class ScrollPosition extends HTMLElement
+  {
+    constructor()
+    {
+      super();
+    }
+
+    connectedCallback()
+    {
+      let body = document.body;
+      let element = this.parentNode;
+
+      let valueChangedEvent = new CustomEvent('value-changed', {detail: {value: 0.0}});
+      this.dispatchEvent(valueChangedEvent);
+
+      element.addEventListener('scroll', () =>
+      {
+        let a = element.scrollTop;
+        let b = element.scrollHeight - element.clientHeight;
+        let c = (a / b) * 100;
+
+        valueChangedEvent = new CustomEvent('value-changed', {detail: {value: c}});
+
+        this.dispatchEvent(valueChangedEvent);
+
+      });
+    }
+  }
+
+);
+
+
+</script>

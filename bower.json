@@ -1,0 +1,25 @@
+{
+  "name": "scroll-position",
+  "version": "0.0.1",
+  "authors": [
+    "Florian Fechner"
+  ],
+  "description": "A Web Component that wrapps the JS-Library Snap.SVG",
+  "keywords": [
+    "web-component",
+    "polymer"
+  ],
+  "main": "scroll-position.html",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.2.5"
+  }
+}

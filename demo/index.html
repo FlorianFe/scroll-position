@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>Snap-SVG Demo</title>
+    <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../../paper-progress/paper-progress.html">
+    <link rel="import" href="../scroll-position.html">
+  </head>
+  <body unresolved>
+
+    <demo-snippet>
+      <template>
+        <style is="custom-style">
+
+          .container
+          {
+            height: 150px;
+            overflow: scroll;
+          }
+
+          paper-progress
+          {
+            width: 100%;
+          }
+
+        </style>
+
+        <paper-progress id="paper-progress" value="0"></paper-progress>
+
+        <div class="container">
+          <scroll-position id="scroll-position"></scroll-position>
+          <p>This is a little scrolling example.</p>
+          <p>When you are scrolling this area the value-property of scroll-position is updating.</p>
+          <p>The value is always between 0 and 100.</p>
+          <p>0 means that the parent element of scroll-position is at its scroll beginning.</p>
+          <p>100 means that the parent element of scroll-position is at its scroll end.</p>
+          <p>works with Polymers two way databinding =) </p>
+        </div>
+        <script>
+
+          let scrollPosition = document.getElementById('scroll-position');
+          let paperProgress = document.getElementById('paper-progress');
+
+          scrollPosition.addEventListener('value-changed', (data) =>
+          {
+            let scrollValue = data.detail.value;
+            paperProgress.value = scrollValue;
+          });
+
+        </script>
+      </template>
+    </demo-snippet>
+
+  </body>
+</html>
