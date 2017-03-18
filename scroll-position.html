@@ -7,6 +7,8 @@ customElements.define('scroll-position',
     constructor()
     {
       super();
+      
+      this.value = 0.0;
     }
 
     connectedCallback()
@@ -23,10 +25,10 @@ customElements.define('scroll-position',
         let b = element.scrollHeight - element.clientHeight;
         let c = (a / b) * 100;
 
-        valueChangedEvent = new CustomEvent('value-changed', {detail: {value: c}});
+        this.value = c;
 
+        valueChangedEvent = new CustomEvent('value-changed', {detail: {value: this.value}});
         this.dispatchEvent(valueChangedEvent);
-
       });
     }
   }
