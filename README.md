@@ -1,6 +1,6 @@
-# snap-svg
+# scroll-position
 
-An element that wrapps the snap.svg library.
+An element that holds the percent value of the relative scroll position in parent Node.
 
 
 ## Dependencies
