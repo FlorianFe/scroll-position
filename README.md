@@ -1,5 +1,7 @@
 # scroll-position
 
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/owner/my-element)
+
 An element that holds the percent value of the relative scroll position in parent Node.
 
 
@@ -16,4 +18,4 @@ Then, go ahead and download the element's dependencies:
 
 ## Issues
 
-Point me an issue, when you found a bug or want me to add something :) 
+Point me an issue, when you found a bug or want me to add something :)
