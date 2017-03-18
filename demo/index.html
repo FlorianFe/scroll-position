@@ -14,13 +14,14 @@
   <body unresolved>
 
     <demo-snippet>
-      <template>
+      <template is="dom-bind">
         <style is="custom-style">
 
           .container
           {
-            height: 150px;
+            height: 300px;
             overflow: scroll;
+            text-align: center;
           }
 
           paper-progress
@@ -30,29 +31,15 @@
 
         </style>
 
-        <paper-progress id="paper-progress" value="0"></paper-progress>
-
         <div class="container">
-          <scroll-position id="scroll-position"></scroll-position>
-          <p>This is a little scrolling example.</p>
-          <p>When you are scrolling this area the value-property of scroll-position is updating.</p>
-          <p>The value is always between 0 and 100.</p>
-          <p>0 means that the parent element of scroll-position is at its scroll beginning.</p>
-          <p>100 means that the parent element of scroll-position is at its scroll end.</p>
-          <p>works with Polymers two way databinding =) </p>
+          <scroll-position value="{{value}}"></scroll-position>
+          <img src="http://lorempixel.com/1080/1920" />
         </div>
-        <script>
 
-          let scrollPosition = document.getElementById('scroll-position');
-          let paperProgress = document.getElementById('paper-progress');
+        <br><br>
 
-          scrollPosition.addEventListener('value-changed', (data) =>
-          {
-            let scrollValue = data.detail.value;
-            paperProgress.value = scrollValue;
-          });
+        <paper-progress value="[[value]]"></paper-progress>
 
-        </script>
       </template>
     </demo-snippet>
 
