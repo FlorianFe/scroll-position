@@ -10,11 +10,8 @@ First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polyme
 
 <!--
 ```
-
-
-
 <custom-element-demo>
-  <template>
+  <template is="dom-bind">
 
     <link rel="import" href="scroll-position.html">
     <link rel="import" href="https://polygit.org/components/polymer/polymer.html">
