@@ -1,25 +1,52 @@
-# scroll-position
+# \<bouncing-spinner\>
 
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/owner/my-element)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://beta.webcomponents.org/element/florianfe/scroll-position)
 
+A small bouncing spinner build with Polymer
 
-## Usage
+## Install the Polymer-CLI
 
-Simply place an <scroll-position> element inside an element you want to track the vertical scroll position of. The scroll
-position is a value between 0 and 100 and stored in the "value"-property of the <scroll-position> element.
+First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your application locally.
 
+<!--
+```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="scroll-position.html">
 
-## Dependencies
+    
+  </template>
+</custom-element-demo>
+```
+-->
 
-Element dependencies are managed via [Bower](http://bower.io/). You can
-install that via:
+## Viewing Your Application
 
-    npm install -g bower
+```
+$ polymer serve
+```
 
-Then, go ahead and download the element's dependencies:
+## Building Your Application
 
-    bower install
+```
+$ polymer build
+```
 
-## Issues
+This will create a `build/` folder with `bundled/` and `unbundled/` sub-folders
+containing a bundled (Vulcanized) and unbundled builds, both run through HTML,
+CSS, and JS optimizers.
 
-Point me an issue, when you found a bug or want me to add something :)
+You can serve the built versions by giving `polymer serve` a folder to serve
+from:
+
+```
+$ polymer serve build/bundled
+```
+
+## Running Tests
+
+```
+$ polymer test
+```
+
+Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
