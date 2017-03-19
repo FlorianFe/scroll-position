@@ -8,47 +8,6 @@ Simply place an element inside an element you want to track the vertical scroll 
 
 First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your application locally.
 
-<!--
-```
-<custom-element-demo>
-  <template>
-
-    <link rel="import" href="scroll-position.html">
-    <link rel="import" href="https://polygit.org/components/paper-progress/paper-progress.html">
-    <next-code-block></next-code-block>
-
-  </template>
-</custom-element-demo>
-```
--->
-
-```html
-<style is="custom-style">
-
-  .container
-  {
-    height: 300px;
-    overflow: scroll;
-    text-align: center;
-  }
-
-  paper-progress
-  {
-    width: 100%;
-  }
-
-</style>
-
-<div class="container">
-  <scroll-position value="{{value}}"></scroll-position>
-  <img src="http://lorempixel.com/1080/1920" />
-</div>
-
-<br><br>
-
-<paper-progress value="[[value]]"></paper-progress>
-```
-
 ## Viewing Your Application
 
 ```
