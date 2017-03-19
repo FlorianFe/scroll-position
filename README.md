@@ -12,8 +12,10 @@ First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polyme
 ```
 <custom-element-demo>
   <template is="dom-bind">
+
     <link rel="import" href="scroll-position.html">
-    <link rel="import" href="http://polygit.org/components/paper-progress/paper-progress.html">
+    <link rel="import" href="https://polygit.org/components/polymer/polymer.html">
+    <link rel="import" href="https://polygit.org/components/paper-progress/paper-progress.html">
 
     <style is="custom-style">
 
