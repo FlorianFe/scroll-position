@@ -11,7 +11,7 @@ First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polyme
 <!--
 ```
 <custom-element-demo>
-  <template is="dom-bind">
+  <template>
 
     <link rel="import" href="scroll-position.html">
     <link rel="import" href="https://polygit.org/components/paper-progress/paper-progress.html">
