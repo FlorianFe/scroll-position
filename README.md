@@ -2,7 +2,11 @@
 
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/owner/my-element)
 
-An element that holds the percent value of the relative scroll position in parent Node.
+
+## Usage
+
+Simply place an <scroll-position> element inside an element you want to track the vertical scroll position of. The scroll
+position is a value between 0 and 100 and stored in the "value"-property of the <scroll-position> element.
 
 
 ## Dependencies
