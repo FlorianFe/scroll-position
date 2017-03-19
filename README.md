@@ -10,13 +10,14 @@ First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polyme
 
 <!--
 ```
+
+<link rel="import" href="scroll-position.html">
+<link rel="import" href="https://polygit.org/components/polymer/polymer.html">
+<link rel="import" href="https://polygit.org/components/paper-progress/paper-progress.html">
+
 <custom-element-demo>
-  <template is="dom-bind">
-
-    <link rel="import" href="scroll-position.html">
-    <link rel="import" href="https://polygit.org/components/polymer/polymer.html">
-    <link rel="import" href="https://polygit.org/components/paper-progress/paper-progress.html">
-
+  <template>
+    
     <style is="custom-style">
 
       .container
