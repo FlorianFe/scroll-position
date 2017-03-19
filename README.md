@@ -11,10 +11,34 @@ First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polyme
 <!--
 ```
 <custom-element-demo>
-  <template>
+  <template is="dom-bind">
     <link rel="import" href="scroll-position.html">
+    <link rel="import" href="../paper-progress/paper-progress.html">
 
+    <style is="custom-style">
 
+      .container
+      {
+        height: 300px;
+        overflow: scroll;
+        text-align: center;
+      }
+
+      paper-progress
+      {
+        width: 100%;
+      }
+
+    </style>
+
+    <div class="container">
+      <scroll-position value="{{value}}"></scroll-position>
+      <img src="http://lorempixel.com/1080/1920" />
+    </div>
+
+    <br><br>
+
+    <paper-progress value="[[value]]"></paper-progress>
   </template>
 </custom-element-demo>
 ```
