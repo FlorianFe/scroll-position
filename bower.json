@@ -4,7 +4,7 @@
   "authors": [
     "Florian Fechner"
   ],
-  "description": "A Web Component that wrapps the JS-Library Snap.SVG",
+  "description": "A Web Component that hold the current scroll value",
   "keywords": [
     "web-component",
     "polymer"
